@@ -31,14 +31,14 @@ function buttonClick(){
                     newImage.attr('src', results[i].images.fixed_height.url).addClass('new').hide();
              		// on click function for still image that hides old and reveals new
 					$(characterImage).on('click', function(){
-						$('.old').hide();
-						$('.new').show();
+						$(this).hide();
+						$(this).parent().find('.new').show();
 
 					});
 					//on click function for animated image that hides new and reveals old
 					$(newImage).on('click', function(){
-						$('.new').hide();
-						$('.old').show();
+						$(this).hide();
+						$(this).parent().find('.old').show();
 					});
 
 
