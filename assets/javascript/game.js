@@ -10,7 +10,7 @@ function buttonClick(){
 	//set var g to name/value of the button clicked
 	var g= $(this).attr("data-name");
 	// Set giphy api to a var, g is inserted into url to complete search for specific character
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + g+ "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + g+ "&api_key=dc6zaTOxFJmzC&limit=10";
 
 	$.ajax({url: queryURL, method: "GET"}).done(function(response) {
 			
