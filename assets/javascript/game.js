@@ -29,12 +29,13 @@ function buttonClick(){
                     // assigned an attribute linking the giphys found in the results to the var characterImage
                     characterImage.attr('src', results[i].images.fixed_height_still.url).addClass('old');
                     newImage.attr('src', results[i].images.fixed_height.url).addClass('new').hide();
-             		
+             		// on click function for still image that hides old and reveals new
 					$(characterImage).on('click', function(){
 						$('.old').hide();
 						$('.new').show();
 
 					});
+					//on click function for animated image that hides new and reveals old
 					$(newImage).on('click', function(){
 						$('.new').hide();
 						$('.old').show();
