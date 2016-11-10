@@ -1,7 +1,14 @@
-body {
-	background: blue;
-};
 
-.b {
-	margin-left: 40%;
-};
+
+body {
+	background: #00FF00;
+}
+
+.center{
+	text-align: center;
+	margin-top: 20px;
+}
+.new{
+	display: hide;
+}
+
